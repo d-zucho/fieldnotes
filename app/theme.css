@@ -1,0 +1,13 @@
+:root {
+  --background: oklch(96.7% 0.007 88.6);
+  --foreground: oklch(28.9% 0.012 160.5);
+  --card: oklch(98.8% 0.004 91.4);
+  --text-secondary: oklch(56% 0.014 121.9);
+  --text-accent: oklch(42.6% 0.051 167.3);
+  --bg-accent: oklch(42.6% 0.051 167.3);
+  --bg-accent-light: oklch(87.4% 0.022 136.6);
+  --border-main: oklch(89.9% 0.014 115.9);
+  --bg-card-header: oklch(94.8% 0.009 100);
+  --verification-bg: oklch(93.2% 0.021 88.7);
+  --verification-text: oklch(56.2% 0.071 81.7);
+}
