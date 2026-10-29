@@ -54,13 +54,15 @@ const MySidebar = () => {
               </div>
             </SidebarMenuButton>
           </SidebarMenuItem>
+          <SidebarMenuItem className='group-data-[collapsible=icon]:hidden'>
+            <div className='flex flex-col pl-2'>
+              <span className='text-xs italic'>Say It Anyway</span>
+              <span className='text-[10px] tracking-wider text-muted-foreground uppercase'>
+                Investigations · Vol. VII
+              </span>
+            </div>
+          </SidebarMenuItem>
         </SidebarMenu>
-        <div className='flex flex-col pl-2'>
-          <span className='text-xs italic'>Say It Anyway</span>
-          <span className='text-[10px] tracking-wider text-muted-foreground uppercase'>
-            Investigations · Vol. VII
-          </span>
-        </div>
       </SidebarHeader>
 
       <SidebarContent>
@@ -82,7 +84,7 @@ const MySidebar = () => {
         <SidebarGroup>
           <SidebarGroupLabel>Workspace</SidebarGroupLabel>
           <SidebarGroupContent>
-            <SidebarMenu>
+            <SidebarMenu className='space-y-2'>
               {workspaceItems.map(({ title, href, icon: Icon, count }) => (
                 <SidebarMenuItem key={href}>
                   <SidebarMenuButton
@@ -91,7 +93,7 @@ const MySidebar = () => {
                     tooltip={title}
                   >
                     <Icon />
-                    <span>{title}</span>
+                    <span className='pl-2'>{title}</span>
                   </SidebarMenuButton>
                   {count !== undefined && (
                     <SidebarMenuBadge>

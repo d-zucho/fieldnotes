@@ -5,8 +5,10 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --text-heading-h1: clamp(2.25rem, 1.667rem + 2.593vw, 4rem);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-heading: var(--heading);
   --font-sans: var(--font-sans);
   --font-mono: var(--font-geist-mono);
   --font-heading: var(--font-sans);
@@ -142,4 +144,16 @@
   html {
     @apply font-sans;
   }
+}
+
+.btn-shadow-dark {
+  box-shadow: inset -4px -4px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btn-shadow-light {
+  box-shadow: inset 4px 4px 4px 0px rgba(255, 255, 255, 0.5);
+}
+
+.btn-shadow-dark:hover {
+  box-shadow: none;
 }

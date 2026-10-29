@@ -9,6 +9,7 @@ import {
 } from '@/components/ui/sidebar'
 import { TooltipProvider } from '@/components/ui/tooltip'
 import MySidebar from '@/components/MySidebar'
+import HeaderMenu from '@/components/HeaderMenu'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 
@@ -45,8 +46,9 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
           <SidebarProvider defaultOpen>
             <MySidebar />
             <SidebarInset>
-              <header className='flex h-12 items-center border-b px-4'>
-                <SidebarTrigger />
+              <header className='flex h-20 items-center border-b px-4'>
+                <SidebarTrigger className={'text-heading'} />
+                <HeaderMenu />
               </header>
               {children}
             </SidebarInset>
